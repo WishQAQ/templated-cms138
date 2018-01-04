@@ -1,0 +1,2 @@
+<h2 class="l-synewsem"><a href="[field:typelink /]" target="_blank">talagou news center</a></h2>
+        <h2 class="l-synews"><a class="l-newschinatit" href="[field:typelink /]" target="_blank">[field:typename /]</a></h2>

@@ -1,0 +1,44 @@
+<?php
+$z[0]=Array("global","",109,135);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",188,218);
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",255,282);
+$z[2][4]['name']="cfg_keywords";
+$z[3]=Array("include","",1800,1837);
+$z[3][4]['filename']="head_m.htm";
+$z[4]=Array("include","",1904,1943);
+$z[4][4]['filename']="banner_m.htm";
+$z[5]=Array("type","<a href=\"list.php?tid=[field:id/]\"> <em class=\"active controlBar\"> <cite class=\"icon\"></cite> </em> </a> ",2398,2537);
+$z[5][4]['typeid']="8";
+$z[6]=Array("arclist","\r\n                          <dd class=\"active \">\r\n                            <div alt=\"\" data-otherlink=\"0\" data-phref=\"view.php?aid=[field:id/]\" class=\"productatag\">\r\n                              <div class=\"imgWrap\"><a href=\"view.php?aid=[field:id/]\"><img src=\"[field:litpic/]\"></a></div>\r\n                              <div class=\"infoWrap\">\r\n                                <h3 class=\"productTitle\"><span class=\"name \"><a href=\"view.php?aid=[field:id/]\">[field:title/]</a> </span></h3>\r\n                                <p class=\"mark\"> </p>\r\n                              </div>\r\n                            </div>\r\n                          </dd>\r\n                          ",3033,3780);
+$z[6][4]['titlelen']="36";
+$z[6][4]['typeid']="8";
+$z[6][4]['limit']="0,4";
+$z[7]=Array("arclist","\r\n                          <dd class=\"active \">\r\n                            <div alt=\"\" data-otherlink=\"0\" data-phref=\"view.php?aid=[field:id/]\" class=\"productatag\">\r\n                              <div class=\"imgWrap\"><a href=\"view.php?aid=[field:id/]\"><img src=\"[field:litpic/]\"></a></div>\r\n                              <div class=\"infoWrap\">\r\n                                <h3 class=\"productTitle\"><span class=\"name \"><a href=\"view.php?aid=[field:id/]\">[field:title/]</a> </span></h3>\r\n                                <p class=\"mark\"> </p>\r\n                              </div>\r\n                            </div>\r\n                          </dd>\r\n                          ",4092,4839);
+$z[7][4]['titlelen']="36";
+$z[7][4]['typeid']="8";
+$z[7][4]['limit']="4,4";
+$z[8]=Array("arclist","\r\n                          <dd class=\"active \">\r\n                            <div alt=\"\" data-otherlink=\"0\" data-phref=\"view.php?aid=[field:id/]\" class=\"productatag\">\r\n                              <div class=\"imgWrap\"><a href=\"view.php?aid=[field:id/]\"><img src=\"[field:litpic/]\"></a></div>\r\n                              <div class=\"infoWrap\">\r\n                                <h3 class=\"productTitle\"><span class=\"name \"><a href=\"view.php?aid=[field:id/]\">[field:title/]</a> </span></h3>\r\n                                <p class=\"mark\"> </p>\r\n                              </div>\r\n                            </div>\r\n                          </dd>\r\n                          ",5151,5898);
+$z[8][4]['titlelen']="36";
+$z[8][4]['typeid']="8";
+$z[8][4]['limit']="8,4";
+$z[9]=Array("type","<em class=\"borderName\" style=\"color:#ffffff\"> [field:typename/] </em> </span> <span class=\"right\"> <em class=\"moreCont\"></em> <a href=\"list.php?tid=[field:id/]\"> <em class=\"active controlBar\"> <cite class=\"icon\"></cite> </em> </a>",7160,7424);
+$z[9][4]['typeid']="1";
+$z[10]=Array("sql","[field:content function=cn_substr(Html2Text(@me),300)/]",7540,7666);
+$z[10][4]['sql']="select content from dede_arctype where id=2";
+$z[11]=Array("type"," <em class=\"borderName\" style=\"color:#ffffff\">[field:typename/]</em> </span> <span class=\"right\"> <em class=\"moreCont\"></em> <a href=\"list.php?tid=[field:id/]\"> <em class=\"active controlBar\"> <cite class=\"icon\"></cite> </em> </a>",8054,8317);
+$z[11][4]['typeid']="8";
+$z[12]=Array("channel","\r\n                <span data-advertid=\"6\" data-id=\"64\" class=\"js_gotoNewsList\"> <em class=\"active\"> <a href=\"list.php?tid=[field:id/]\">[field:typename/]</a></em> </span> \r\n                ",8451,8690);
+$z[12][4]['type']="son";
+$z[12][4]['typeid']="8";
+$z[13]=Array("type","<em class=\"borderName\" style=\"color:#ffffff\"> [field:typename/] </em> </span> <span class=\"right\"> <em class=\"moreCont\"></em> <a href=\"list.php?tid=[field:id/]\"> <em class=\"active controlBar\"> <cite class=\"icon\"></cite> </em> </a>",9097,9361);
+$z[13][4]['typeid']="5";
+$z[14]=Array("arclist","\r\n                  <li class=\"active\">\r\n                    <div data-id=\"143\" class=\"js_gotoNewsDetail\">\r\n                      <h3 class=\"newsTitle\"> <em class=\"icon\"></em> <span class=\"name\"><a href=\"view.php?aid=[field:id/]\">[field:title/] </a></span> </h3>\r\n                    </div>\r\n                  </li>\r\n                  ",9495,9892);
+$z[14][4]['row']="8";
+$z[14][4]['titlelen']="36";
+$z[14][4]['typeid']="5";
+$z[15]=Array("include","",10005,10042);
+$z[15][4]['filename']="foot_m.htm";
+
+?>

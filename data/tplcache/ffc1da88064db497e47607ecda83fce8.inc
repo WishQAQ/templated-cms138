@@ -1,0 +1,3 @@
+<div class="m-pro "> <a href="[field:arcurl/]"><img src="[field:litpic/]" alt="[field:title/]"></a>
+        <p>[field:title/]</p>
+      </div>

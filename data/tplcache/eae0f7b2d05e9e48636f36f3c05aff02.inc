@@ -1,0 +1,1 @@
+<div class="idx-new-left"> <a href="[field:arcurl/]"> <img src="[field:litpic/]" alt="" width=500 height=301> </a> </div>

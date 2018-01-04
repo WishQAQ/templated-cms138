@@ -1,0 +1,1 @@
+<a href="[field:typelink /]">咨询价格表</a>

@@ -1,0 +1,44 @@
+<div class="qqkefu">
+  <ul>
+    <li class="top"><span></span></li>
+    <li class="qq_czaa" id="130"><a href="#"><b class="a"></b>{dede:global.cfg_dh/}</a></li>
+    <li class="qq_czaa" id="130"><a href="tencent://message/?v=1&uin={dede:global.cfg_qq/}&site=qq&menu=yes"><b class="b"></b>在线客服</a></li>
+    <li class="qq_czaa" id="130">{dede:type typeid='18'}<a href="[field:typelink /]"><b class="f"></b>在线留言</a>{/dede:type}</li>
+  </ul>
+</div>
+<div class="footer">
+  <div class="ft-link">
+    <div class="inner-cent"> <span>友情链接:</span> 
+    {dede:flink row='24'}<span>[field:link /]</span>{/dede:flink}
+    <span> </span> </div>
+  </div>
+  <div class="ft-main">
+    <div class="inner-cent">
+      <div class="ft-seach">
+        <h3>{dede:global.cfg_mc/}</h3>
+        <p>YI JIE PACKING CO., LTD.</p>
+        <form id="reviewForm" method="post" action="/plus/search.php" name="reviewForm">
+          <input type="hidden" name="kwtype" value="0"/>
+          <input type="text" id="search-keyword" name="q">
+          <input type="submit" value="搜索" class="button">
+        </form>
+      </div>
+      <ul class="ft-nav">
+        {dede:channelartlist row=6 typeid='top'}
+        <li>
+          <p>{dede:field name='typename'/}</p>
+          <ol class="in-nav">
+            {dede:channel type='son' noself='yes'}
+            <li> <a href="[field:typelink/]">[field:typename/]</a></li>
+            {/dede:channel}
+          </ol>
+        </li>
+        {/dede:channelartlist}
+      </ul>
+      <div class="beian">
+        <p>{dede:global.cfg_powerby/} <a href="http://www.miitbeian.gov.cn/" target="_blank">{dede:global.cfg_beian/}</a> <span></span><br>
+         </p>
+      </div>
+    </div>
+  </div>
+</div>

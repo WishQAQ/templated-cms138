@@ -1,0 +1,4 @@
+INSERT INTO `dede_search_keywords` VALUES('1','新闻对方','新闻对方 对方 新闻','1','0','1462269049','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','新闻','新闻','2','0','1462269073','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','环保','环保','4','1','1462269168','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','展示','展示','3','16','1462269193','0','0');

@@ -1,0 +1,3 @@
+<li> <a href="list.php?tid=[field:id/]"> <span><img src="/style/m/images/tj.png" alt="[field:typename /]"></span> <b>[field:typename /]</b>
+      <p>SPECIAL</p>
+      </a> </li>

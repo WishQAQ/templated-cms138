@@ -1,0 +1,1 @@
+<li class="contact" onClick="location.href='list.php?tid=[field:id/]'"><span>联系方式</span></li>

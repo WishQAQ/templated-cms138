@@ -1,0 +1,1 @@
+<h2><a class="s-yyczbt" href="[field:typelink /]" target="_blank">[field:typename /]</a></h2>

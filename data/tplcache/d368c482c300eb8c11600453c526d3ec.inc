@@ -1,0 +1,1 @@
+<a href="[field:typelink /]"><b class="f"></b>在线留言</a>

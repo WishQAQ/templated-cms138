@@ -1,0 +1,2 @@
+INSERT INTO `dede_diyform1` VALUES('1','0','站窝窝','13588889999','9490489@qq.com','站窝窝留言测试 www.xunmoban.com');
+INSERT INTO `dede_diyform1` VALUES('2','0','站窝窝','13599998888','9490489@qq.com','站窝窝手机端留言测试 www.xunmoban.com');

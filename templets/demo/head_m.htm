@@ -1,0 +1,377 @@
+<header id="box_header">
+        <div class="columnSpace" id="elem-PublicConfig_showLogo01-001" name="LOGO">
+          <section class="PublicConfig_showLogo01-d1_c1" style="background:#00598d">
+            <div class="showStyle1 whiteIcon grayIcon">
+              <div class="active logoWrap"> <a href="index.php" style="width:40%; float:left;"><img src="/style/m/images/wap_logo.png" id="img_logo"/></a> <span style="width:45%; float:right; line-height:45px; font-family:'微软雅黑'; font-size:1.2em; color:#fff;">电话：{dede:global.cfg_dh/} </div>
+              </span> </div>
+            <div class="clea-both"></div>
+          </section>
+        </div>
+        <script type="text/javascript" src="/style/m/js/iscroll.js"></script> 
+        <script type="text/javascript">
+
+
+
+var phoneScroll;
+
+var ulwidth;
+
+function liresize() {
+
+var w = $(".plist").width();
+
+$(".bull").width(w / 4);
+
+phoneScroll.refresh();
+
+}
+
+
+
+$(function () {
+
+phoneScroll = new iScroll("plist", {
+
+zoom: false,
+
+hScrollbar: false,
+
+vScrollbar: false,
+
+bounce: false,
+
+snap: "li",
+
+momentum: false,
+
+vScroll: false,
+
+hScroll: true,
+
+onScrollEnd: disableArrow,
+
+onScrollMove: disableArrow1
+
+});
+
+$(window).load(function (e) {
+
+liresize();
+
+});
+
+
+
+$(window).resize(function (e) {
+
+liresize();
+
+});
+
+$('#columnnext').click(function () {
+
+phoneScroll.scrollToPage('next', 0); return false;
+
+});
+
+$('#columnprev').click(function () {
+
+phoneScroll.scrollToPage('prev', 0); return false;
+
+});
+
+});
+
+var disableArrow1 = function () {
+
+var x = phoneScroll.x;
+
+
+
+var bul_len = $(".bul li").length - 4;
+
+var w = (parseFloat($(".bull").width()) + parseFloat(6)) * parseFloat(bul_len) * -1;
+
+var wholeWidth = parseFloat($(".plist").width());
+
+//        alert(wholeWidth);
+
+//        alert(w);
+
+if (x < w) {
+
+$('#columnnext').addClass('disTap');
+
+$('#columnnext').removeClass('active');
+
+$('#columnprev').addClass('active');
+
+$('#columnprev').removeClass('disTap');
+
+}
+
+else if (x < 0) {
+
+$('#columnnext').removeClass('disTap');
+
+$('#columnnext').addClass('active');
+
+$('#columnprev').addClass('active');
+
+$('#columnprev').removeClass('disTap');
+
+}
+
+if (x == 0) {
+
+$('#columnprev').addClass('disTap');
+
+$('#columnprev').removeClass('active');
+
+$('#columnnext').removeClass('disTap');
+
+$('#columnnext').addClass('active');
+
+}
+
+};
+
+var disableArrow = function () {
+
+var x = phoneScroll.x;
+
+
+
+var bul_len = $(".bul li").length - 4;
+
+var w = (parseFloat($(".bull").width()) + parseFloat(6)) * parseFloat(bul_len) * -1;
+
+var wholeWidth = parseFloat($(".plist").width());
+
+//        alert(wholeWidth);
+
+//        alert(w);
+
+if (x < w) {
+
+$('#columnnext').addClass('disTap');
+
+$('#columnnext').removeClass('active');
+
+$('#columnprev').addClass('active');
+
+$('#columnprev').removeClass('disTap');
+
+}
+
+else if (x < 0) {
+
+$('#columnnext').removeClass('disTap');
+
+$('#columnnext').addClass('active');
+
+$('#columnprev').addClass('active');
+
+$('#columnprev').removeClass('disTap');
+
+}
+
+if (x == 0) {
+
+$('#columnprev').addClass('disTap');
+
+$('#columnprev').removeClass('active');
+
+$('#columnnext').removeClass('disTap');
+
+$('#columnnext').addClass('active');
+
+}
+
+};
+
+</script>
+        <div class="columnSpace" id="elem-Columns_navigation01-001" name="栏目导航">
+          <div id="Columns_navigation01-001" class="Columns_navigation01-d1">
+            <nav class="Columns_navigation01-d1_c2" style="background:#0066cc">
+              <div>
+                <div class="navBarL disTap" id="columnprev"> <span><em></em></span> </div>
+                <div class="plist " id="plist" style="overflow: hidden; ">
+                  <ul class="bul">
+                    <li class="bull"><a href="/m/" style="color:#ffffff">首 页</a></li>
+                   {dede:channel type='top' row='10'}
+                    <li class="bull"><a href="list.php?tid=[field:id/]" style="color:#ffffff">[field:typename/]</a></li>
+                    {/dede:channel}
+                  </ul>
+                </div>
+                <div class="navBarR active" id="columnnext"> <span><em></em></span> </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <script type="text/javascript">
+
+$(function () {
+
+
+
+$(".z3g-button").click(function () {
+
+$("#msgSuccessAlertInfo").hide();
+
+})
+
+$("#list").click(function () {
+
+$("#emit").removeClass("current");
+
+$(this).addClass("current");
+
+$("#borderContList").show();
+
+$("#borderContEmit").hide();
+
+})
+
+$("#emit").click(function () {
+
+$("#list").removeClass("current");
+
+$(this).addClass("current");
+
+$("#borderContEmit").show();
+
+$("#borderContList").hide();
+
+})
+
+$(".textSizeBtn").click(function () {
+
+var css = $(this).css("position");
+
+if (css == "relative") {
+
+$(this).css("position", "static");
+
+$(".z3g-textSize").hide();
+
+}
+
+else {
+
+$(this).css("position", "relative");
+
+$(".z3g-textSize").show();
+
+}
+
+})
+
+$(".cont li").click(function () {
+
+var i = $(this).attr("data-ac-code");
+
+$(".cont li").removeClass("current");
+
+$(this).addClass("current");
+
+$(".textSizeWrap").removeClass("textSizeSmall").removeClass("textSizeBig");
+
+if (i == 1) {
+
+$(".textSizeWrap").addClass("textSizeSmall");
+
+} else if (i == 2) {
+
+$(".textSizeWrap").removeClass("textSizeSmall").removeClass("textSizeBig");
+
+} else {
+
+$(".textSizeWrap").addClass("textSizeBig");
+
+}
+
+})
+
+})
+
+
+
+function init() {
+
+$(".articleWrap img").each(function () {
+
+$(this).css("width", "100%");
+
+})
+
+$(".textSizeWrap img").each(function () {
+
+$(this).css({ "width": "100%", "height": "auto" });
+
+})
+
+var w = document.body.clientWidth;
+
+var pic = document.getElementsByTagName("img");
+
+for (var i = 0; i < pic.length; i++) {
+
+var width1 = pic[i].width;
+
+var height1 = pic[i].height;
+
+pic[i].width = w;
+
+pic[i].height = height1 * w / width1;
+
+}
+
+$(".loading img").each(function () {
+
+$(this).css("width", "100%");
+
+})
+
+$(".productListCont ,.bannerScrollWrap").css("width", w);
+
+$("#img-captcha").css({ "width": "100px", "height": "30px" });
+
+$("#sliderlist img").css({ "width": "90%", "height": "90%" });
+
+$("#img_logo").css({ "width": "320px", "height": "92px" });
+
+}
+
+
+
+//phone隐藏浮动栏
+
+var isiPhone = navigator.userAgent.toLowerCase().indexOf("iphone");
+
+if (isiPhone > -1) {
+
+$("input[type=text],textarea").each(function () {
+
+$(this).focus(function () {
+
+$(".foot").hide();
+
+});
+
+$(this).blur(function () {
+
+$(".foot").show();
+
+})
+
+});
+
+} 
+
+</script>
+      <style>
+.swipe #pagenavi a.active{background:#0066cc}
+</style>
+      <script src="/style/m/js/simplefoucs.js" type="text/javascript"></script>

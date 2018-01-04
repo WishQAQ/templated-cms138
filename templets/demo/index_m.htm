@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{dede:global.cfg_webname/}移动版</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="order by xunmoban.com"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" name="viewport"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection"/>
+<link rel="stylesheet" type="text/css" href="/style/m/css/common.css">
+<link rel="stylesheet" type="text/css" href="/style/m/css/pageindex.css">
+<link rel="stylesheet" type="text/css" href="/style/m/css/custom.css">
+<link rel="stylesheet" type="text/css" href="/style/m/css/pageothers.css">
+<link rel="stylesheet" type="text/css" href="/style/m/css/share.css">
+<script type="text/javascript" src="/style/m/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="/style/m/js/touchwipe.js"></script>
+<script src="/style/m/js/jquery.promptu-menu.js" type="text/javascript"></script>
+<script type="text/javascript" src="/style/m/js/touchslider.dev.js"></script>
+<script type="text/javascript" src="/style/m/js/touchscroll.js"></script>
+<script type="text/javascript" src="/style/m/js/jquery.flow.1.2.auto.js"></script>
+</head>
+<body onload="init();" style="background:#ffffff">
+<div id="box_root" class="pageIndex">
+  <div id="box_mainBody" style="background:#ffffff">
+    <div id="box_main">
+      
+      {dede:include filename="head_m.htm"/}
+      <div id="box_content" style="min-height: 437px;">
+        {dede:include filename="banner_m.htm"/}
+        <div name="产品列表" id="elem-Products_mobileShowCase01-001" class="columnSpace">
+          <section id="mobileShowCase-Products_mobileShowCase01-001" class="Products_mobileShowCase01-d1_c1">
+            <div class="borderTitle active js_gotoNew" style="background:#0066cc"> <span class="left"> <em class="icon"></em> <em class="borderName" style="color:#ffffff"> 最新产品 </em> </span> <span class="right"> <em class="moreCont"></em> {dede:type typeid='8'}<a href="list.php?tid=[field:id/]"> <em class="active controlBar"> <cite class="icon"></cite> </em> </a> {/dede:type}</span> </div>
+            <div style="display:block" id="mobilelist01-Products_mobileShowCase01-001" class="borderCont">
+              <div class="showcaseWrap ">
+                <div class="ItemWrap Products_mobilelist01-d1_c5 swipe">
+                  <ul id="slider1">
+                    <li style="display:block">
+                      <div class="productListCont" style="width: 440px;">
+                        
+                        <dl class="rows">
+                          {dede:arclist titlelen='36' typeid='8' limit='0,4'}
+                          <dd class="active ">
+                            <div alt="" data-otherlink="0" data-phref="view.php?aid=[field:id/]" class="productatag">
+                              <div class="imgWrap"><a href="view.php?aid=[field:id/]"><img src="[field:litpic/]"></a></div>
+                              <div class="infoWrap">
+                                <h3 class="productTitle"><span class="name "><a href="view.php?aid=[field:id/]">[field:title/]</a> </span></h3>
+                                <p class="mark"> </p>
+                              </div>
+                            </div>
+                          </dd>
+                          {/dede:arclist}
+                        </dl>
+                        
+                      </div>
+                    </li>
+                    <li>
+                      <div class="productListCont" style="width: 440px;">
+                        
+                        <dl class="rows">
+                          {dede:arclist titlelen='36' typeid='8' limit='4,4'}
+                          <dd class="active ">
+                            <div alt="" data-otherlink="0" data-phref="view.php?aid=[field:id/]" class="productatag">
+                              <div class="imgWrap"><a href="view.php?aid=[field:id/]"><img src="[field:litpic/]"></a></div>
+                              <div class="infoWrap">
+                                <h3 class="productTitle"><span class="name "><a href="view.php?aid=[field:id/]">[field:title/]</a> </span></h3>
+                                <p class="mark"> </p>
+                              </div>
+                            </div>
+                          </dd>
+                          {/dede:arclist}
+                        </dl>
+                        
+                      </div>
+                    </li>
+                    <li>
+                      <div class="productListCont" style="width: 440px;">
+                        
+                        <dl class="rows">
+                          {dede:arclist titlelen='36' typeid='8' limit='8,4'}
+                          <dd class="active ">
+                            <div alt="" data-otherlink="0" data-phref="view.php?aid=[field:id/]" class="productatag">
+                              <div class="imgWrap"><a href="view.php?aid=[field:id/]"><img src="[field:litpic/]"></a></div>
+                              <div class="infoWrap">
+                                <h3 class="productTitle"><span class="name "><a href="view.php?aid=[field:id/]">[field:title/]</a> </span></h3>
+                                <p class="mark"> </p>
+                              </div>
+                            </div>
+                          </dd>
+                          {/dede:arclist}
+                        </dl>
+                        
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <script type="text/javascript">
+
+$(".jFlowControl").each(function () {
+
+$(this).click(function () {
+
+t_div.slide($(this).index());
+
+alert($(this).index());
+
+})
+
+})
+
+var t_div = new TouchSlider({ id: 'slider1', speed: 600, timeout: 6000, before: function (index_div) {
+
+$(".jFlowControl").css("background", "#b0b0b0");
+
+$(".jFlowControl").eq(index_div).css("background", "#0066cc");
+
+}
+
+});
+
+</script> 
+              </div>
+              <div id="mobileShowCase" class="showcaseNav"> <span class="showcaseIndicator" id="myController"> <em class="jFlowControl"></em> <em class="jFlowControl"></em> <em class="jFlowControl"></em> </span> </div>
+            </div>
+          </section>
+        </div>
+        <div name="页面内容" id="elem-ComContent_detail01-001" class="columnSpace">
+          <div class="ComContent_detail01-d1_c1" id="ComContent_detail01-001">
+            <section class="ComContent_detail01-d1_c1">
+              <div class="borderTitle active js_gotoNew" style="background:#0066cc"> <span class="left"> <em class="icon"></em> {dede:type typeid='1'}<em class="borderName" style="color:#ffffff"> [field:typename/] </em> </span> <span class="right"> <em class="moreCont"></em> <a href="list.php?tid=[field:id/]"> <em class="active controlBar"> <cite class="icon"></cite> </em> </a>{/dede:type} </span> </div>
+              <div class="borderCont js_gotoNew">
+                <div class="contWrap htmledit"> {dede:sql sql="select content from dede_arctype where id=2"}[field:content function=cn_substr(Html2Text(@me),300)/]{/dede:sql}</div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div name="产品分类" id="elem-NewsCategory_columns01-001" class="columnSpace">
+          <section class="NewsCategory_columns01-d1_c1">
+            <div data-columnid="2" class="borderTitle active js_jumpToNewsList" style="background:#0066cc"> <span class="left"> <em class="icon"></em>{dede:type typeid='8'} <em class="borderName" style="color:#ffffff">[field:typename/]</em> </span> <span class="right"> <em class="moreCont"></em> <a href="list.php?tid=[field:id/]"> <em class="active controlBar"> <cite class="icon"></cite> </em> </a>{/dede:type} </span> </div>
+            <div class="borderCont">
+              <ul>
+                <li class="z3g-column2"> 
+                {dede:channel type='son' typeid='8'}
+                <span data-advertid="6" data-id="64" class="js_gotoNewsList"> <em class="active"> <a href="list.php?tid=[field:id/]">[field:typename/]</a></em> </span> 
+                {/dede:channel}
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="columnSpace" id="elem-News_homelist01-001" name="资讯列表">
+          <section class="News_homelist01-d1_c1">
+            <div class="listStyle01">
+              <div class="borderTitle active js_gotoNew" style="background:#0066cc"> <span class="left"> <em class="icon"></em> {dede:type typeid='5'}<em class="borderName" style="color:#ffffff"> [field:typename/] </em> </span> <span class="right"> <em class="moreCont"></em> <a href="list.php?tid=[field:id/]"> <em class="active controlBar"> <cite class="icon"></cite> </em> </a>{/dede:type} </span> </div>
+              <div class="borderCont">
+                <ul id="infoNewList">
+                  
+                  {dede:arclist row='8' titlelen='36' typeid='5'}
+                  <li class="active">
+                    <div data-id="143" class="js_gotoNewsDetail">
+                      <h3 class="newsTitle"> <em class="icon"></em> <span class="name"><a href="view.php?aid=[field:id/]">[field:title/] </a></span> </h3>
+                    </div>
+                  </li>
+                  {/dede:arclist}
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+        {dede:include filename="foot_m.htm"/}
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

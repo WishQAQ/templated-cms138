@@ -1,0 +1,1 @@
+<a href="list.php?tid=[field:id/]"> <em class="active controlBar"> <cite class="icon"></cite> </em> </a>

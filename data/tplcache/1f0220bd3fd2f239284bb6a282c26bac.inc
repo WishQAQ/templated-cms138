@@ -1,0 +1,3 @@
+<li><a class="cpimg" href="[field:arcurl/]" title="[field:title/]" target="_blank"><img src="[field:litpic/]" onerror="this.src='images/1-150Q50950190-L.jpg'" width="244" height="182" alt="[field:title/]" /></a>
+            <h3><a target="_blank" href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+            <a target="_blank" class="ckxx" href="[field:arcurl/]" title="[field:title/]">了解详情</a><a target="_blank" href="[field:arcurl/]" title="[field:title/]" class="s-cphover"></a></li>

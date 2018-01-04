@@ -1,0 +1,26 @@
+   
+    <div class="sid-nav">
+      
+     {dede:channel type='son'}
+      <div class="sid-item">
+        <h3><a href="[field:typeurl/]">[field:typename/]</a></h3>
+      </div>
+      {/dede:channel}
+    </div>
+    <div class="sid-tj">
+      <h2>推荐产品</h2>
+      <p>Recommended products</p>
+    </div>
+    <div class="sid-show">
+      <div class="sid-pic">
+        <ul>
+          {dede:arclist row='5' titlelen='36' typeid='8'}
+          <li><a href="[field:arcurl/]"><img src="[field:litpic/]" alt="[field:title/]"></a>
+            <p>[field:title/]</p>
+          </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+      <div class="prev"><</div>
+      <div class="next">></div>
+    </div>
